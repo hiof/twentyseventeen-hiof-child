@@ -1,0 +1,209 @@
+/*!
+Theme Name: Twenty Seventeen Hiof
+Theme URI: github.com/hiof/twentyseventeen-hiof-child
+Author: Kenneth Lindbeck-Dahlstrøm
+Author URI: http://hiof.no
+Description: Child theme of Twenty Seventeen for hiof.no
+Version: 1.0.0
+Template: twentyseventeen
+Usage: Copy the twentyfifteen-hiof-child folder into your wp-content/themes/ directory and activate it in the dashboard.
+*/
+
+.byline, .updated{
+  display: inline;
+}
+
+@import "../../../vendor/hiof-frontend/app/assets/sass/variables/_border-radius";
+@import "../../../vendor/hiof-color/app/assets/sass/_variables";
+@import "../../../vendor/hiof-typography/dist/typography";
+
+
+//body, h1,h2,h3,h4,h5,h6, .blog-description, .blog-title, .post-title, .post-meta, .widget-area{
+//  font-family: 'Source Sans Pro', sans-serif;
+//}
+h6{
+  font-size: 1.6rem;
+}
+#secondary{
+  font-size: 1.8rem;
+}
+.wrap{
+  padding: 0 2em;
+}
+.site-description{
+  font-size: 1.6rem;
+}
+.site-title{
+  font-size: 3.6rem;
+}
+ol li, ul li{
+  margin-left: 0;
+}
+h2.widget-title,
+.widget-title,
+.entry-meta,
+.page .entry-header .edit-link{
+  font-size: 1.1rem;
+}
+.entry-title{
+  font-size: 2.6rem;
+}
+.search-form .search-submit .icon{
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.page .panel-content .entry-title,
+.page-title,
+.site-info{
+  font-size: 1.4rem;
+}
+body.page:not(.twentyseventeen-front-page) .entry-title{
+  font-weight: 300;
+  font-size: 2.8rem;
+}
+#content .post-thumbnail > a{
+  border-bottom: none;
+}
+
+blockquote{
+  font-size: 1.8rem;
+  &:before{
+    top: -3rem;
+    left: -3rem;
+  }
+  &:after{
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    bottom: 3rem;
+    right: .5rem;
+  }
+}
+.site-content{
+  padding-top: 2rem;
+}
+
+
+.main-navigation a{
+  color: $color-primary-action;
+  border: .1rem solid $color-primary-action !important;
+  border-radius: $border-radius-standard;
+  padding: .6rem 1.5rem;
+  margin-right: .5rem;
+  line-height: 2rem;
+  &:hover,
+  &:active{
+    background: $color-primary-action;
+    color: $white !important;
+
+  }
+}
+.navigation-top .current-menu-item > a,
+.navigation-top .current_page_item > a{
+  background: $color-primary-action;
+  color: $white;
+}
+.site-header .menu-scroll-down{
+  padding: .6rem 1.5rem;
+  right: 3rem;
+  use{
+    fill: $color-primary-action;
+  }
+  &:hover{
+
+    use{
+      fill: $white;
+    }
+  }
+}
+
+.navigation-top{
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+// box shadown fixes
+
+.entry-title a,
+.entry-meta a,
+.page-links a,
+.page-links a .page-number,
+.entry-footer a,
+.entry-footer .cat-links a,
+.entry-footer .tags-links a,
+.edit-link a,
+.post-navigation a,
+.logged-in-as a,
+.comment-navigation a,
+.comment-metadata a,
+.comment-metadata a.comment-edit-link,
+.comment-reply-link,
+a .nav-title,
+.pagination a,
+.site-info a,
+.widget .widget-title a,
+.widget ul li a,
+.site-footer .widget-area ul li a,
+.site-footer .widget-area ul li a,
+.entry-content a:focus,
+.entry-content a:hover,
+.entry-summary a:focus,
+.entry-summary a:hover,
+.widget a:focus,
+.widget a:hover,
+.site-footer .widget-area a:focus,
+.site-footer .widget-area a:hover,
+.posts-navigation a:focus,
+.posts-navigation a:hover,
+.comment-metadata a:focus,
+.comment-metadata a:hover,
+.comment-metadata a.comment-edit-link:focus,
+.comment-metadata a.comment-edit-link:hover,
+.comment-reply-link:focus,
+.comment-reply-link:hover,
+.widget_authors a:focus strong,
+.widget_authors a:hover strong,
+.entry-title a:focus,
+.entry-title a:hover,
+.entry-meta a:focus,
+.entry-meta a:hover,
+.page-links a:focus .page-number,
+.page-links a:hover .page-number,
+.entry-footer a:focus,
+.entry-footer a:hover,
+.entry-footer .cat-links a:focus,
+.entry-footer .cat-links a:hover,
+.entry-footer .tags-links a:focus,
+.entry-footer .tags-links a:hover,
+.post-navigation a:focus,
+.post-navigation a:hover,
+.pagination a:not(.prev):not(.next):focus,
+.pagination a:not(.prev):not(.next):hover,
+.comments-pagination a:not(.prev):not(.next):focus,
+.comments-pagination a:not(.prev):not(.next):hover,
+.logged-in-as a:focus,
+.logged-in-as a:hover,
+a:focus .nav-title,
+a:hover .nav-title,
+.edit-link a:focus,
+.edit-link a:hover,
+.site-info a:focus,
+.site-info a:hover,
+.widget .widget-title a:focus,
+.widget .widget-title a:hover,
+.widget ul li a:focus,
+.widget ul li a:hover{
+  box-shadow: none;
+}
+.entry-content a,
+.entry-summary a,
+.widget a,
+.site-footer .widget-area a,
+.posts-navigation a,
+.widget_authors a strong {
+  box-shadow: none;
+}
+
+
+
+// Custom styling for the custom multisite frontpage:

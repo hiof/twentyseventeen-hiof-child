@@ -1,0 +1,28 @@
+{
+  "name": "twentyseventeen-hiof",
+  "homepage": "https://github.com/hiof/twentyseventeen-hiof",
+  "authors": [
+    "HiØ ved Kenneth Lindbeck-Dahlstrøm <kld@hiof.no>"
+  ],
+  "description": "twentyseventeen Hiof child Theme",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "hiof-typography": "https://github.com/hiof/typography.git",
+    "hiof-frontend": "https://github.com/hiof/frontend.git",
+    "sass-mq": "^3.3.2"
+  },
+  "overrides": {
+    "hiof-frontend": {
+      "dependencies": {}
+    },
+    "hiof-typography": {
+      "dependencies": {}
+    },
+    "sass-mq": {
+      "dependencies": {}
+    }
+  },
+  "ignoredDependencies": [
+    "hiof-typography"
+  ]
+}
