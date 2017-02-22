@@ -1,12 +1,12 @@
 /*!
-Theme Name: Twenty Seventeen Hiof
+Theme Name: -HiØ, alternativ 3, Twenty Seventeen
 Theme URI: github.com/hiof/twentyseventeen-hiof-child
 Author: Kenneth Lindbeck-Dahlstrøm
-Author URI: http://hiof.no
-Description: Child theme of Twenty Seventeen for hiof.no
+Author URI: http://design.hiof.no/web?del=bloggmal-alternativ-3
+Description: Bloggmal alternativ 3. Minimalistisk tema med mye konfigurasjonsmuligheter. Har blant annet støtte for et stort cover-bilde på forsiden.
 Version: 1.0.0
 Template: twentyseventeen
-Usage: Copy the twentyfifteen-hiof-child folder into your wp-content/themes/ directory and activate it in the dashboard.
+Usage: Copy the twentyseventeen-hiof-child folder into your wp-content/themes/ directory and activate it in the dashboard.
 */
 
 .byline, .updated{
@@ -47,6 +47,9 @@ h2.widget-title,
 }
 .entry-title{
   font-size: 2.6rem;
+  a{
+    border-bottom: none !important;
+  }
 }
 .search-form .search-submit .icon{
   width: 1.8rem;
@@ -63,6 +66,9 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
 }
 #content .post-thumbnail > a{
   border-bottom: none;
+  &:hover{
+    border-bottom: none;
+  }
 }
 
 blockquote{
@@ -83,21 +89,46 @@ blockquote{
   padding-top: 2rem;
 }
 
+.main-navigation{
+  a{
+    color: $color-primary-action;
+    border: .1rem solid $color-primary-action !important;
+    border-radius: $border-radius-standard;
+    padding: .6rem 1.5rem;
+    margin-right: .5rem;
+    line-height: 2rem;
+    &:hover,
+    &:active{
+      background: $color-primary-action;
+      color: $white !important;
 
-.main-navigation a{
-  color: $color-primary-action;
-  border: .1rem solid $color-primary-action !important;
-  border-radius: $border-radius-standard;
-  padding: .6rem 1.5rem;
-  margin-right: .5rem;
-  line-height: 2rem;
-  &:hover,
-  &:active{
-    background: $color-primary-action;
-    color: $white !important;
-
+    }
   }
+  .sub-menu{
+    //left: 0;
+    //top: 4rem;
+    a{
+      margin-right: 0 !important;
+      border: none !important;
+      border-radius: 0 !important;
+    }
+  }
+  ul{
+    li:hover,
+    li.focus{
+      &.menu-item-has-children{
+        &>a{
+          border-bottom-left-radius: 0;
+        }
+      }
+      &>ul{
+        left: 0 !important;
+      }
+    }
+  }
+
 }
+
 .navigation-top .current-menu-item > a,
 .navigation-top .current_page_item > a{
   background: $color-primary-action;
@@ -203,7 +234,6 @@ a:hover .nav-title,
 .widget_authors a strong {
   box-shadow: none;
 }
-
 
 
 // Custom styling for the custom multisite frontpage:
